@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<header>
+    <link href='http://fonts.googleapis.com/css?family=Jim+Nightshade|Lato:100,300,400|Amatic+SC:400,700|Dawning+of+a+New+Day' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../Skillcrush/style.css">
+    <title>Antonia's Skillcrush Page</title>
+    <meta charset="utf-8">
+</header>
+<body>
+    <div class="menu">
+        <p>I'm a menu bar!</p>
+        <ul>
+            <li>Something</li>
+            <li>Something else</li>
+        </ul>
+    </div>
+    <div class="main">
+        <h1 class="bold">Going Wild!</h1>
+        <p>Trying out some things with styles and fonts here. I'm not ready yet to give up on super thin fonts, they make the poems stand out more, but I'm not sure if I like the bullets being all bold and black. I could probably make them grey instead of black, but can't be bothered right now. </p>
+        <p>So far, dealing with the code editor has been a mixed experience. Here are some pros and cons, to be taken with a grain of salt because I realize that I'm not the target audience.</p>
+        <h3 class="bold">Pros</h3>
+        <ul>
+            <li>It's always nice to see changes in real time, especially with the css.</li>
+            <li>I like the challenge of having to actually type out everything without relying on the autocomplete that Sublime Text does for me.</li>
+            <li>I still love everything about this blueprint, so it'll be a while before the cons eat up all that love. And I realize that the editor is just a place to get started, and it's awesome for that!</li>
+        </ul>
+        <h3 class="bold">Cons</h3>
+        <ul>
+            <li>Being used to Sublime Text, I do miss being able to move lines around and typing out every tag by hand does get old pretty quickly.</li>
+            <li>The automatic indentation is not consistent and makes organizing the code a bit difficult.</li>
+            <li>It really bothers me that the editor does not scroll — after ten lines of code, the side-by-side view of editor and page no longer works and I'm stuck with a really narrow editor and a lot of white: <img src="https://www.evernote.com/shard/s366/sh/7a127fdc-4618-4435-a4d5-16efd41427b3/1d051eead90d398ea09afe5c3d41d985/deep/0/Screen-Shot-2014-05-12-at-14.25.18-PM.png" alt="Screenshot of white next to scrolled-down editor" width="500px" class="screenshot"></li>
+            <li>The caret takes up the entire height of the line, but the font does not. Depending on the contents of the line, the text I'm typing either hovers right below the line, or even sits on the line: <img src="https://www.evernote.com/shard/s366/sh/fb59d6e1-6032-47ea-9885-467497fcee43/7f3936c75fff4df6105451fb07e48e14/deep/0/Antonia-go-wild-in-our-code-editor----Skillcrush.png" alt="Screenshot of inconsistent vertical text alignment" width="300px" class="screenshot"> </li>
+            <li>Sometimes the caret becomes unresponsive or disappears and has to be coaxed back by switching between html and css, or even reloading. Right now all is great, but earlier today I kept having to count how often I had pressed which arrow key.</li>
+            <li>I love awards! They made me really happy, but I would have expected them to fade. Since screen real estate is so limited, I had to comment out the display: block so I could work properly. <img src="https://www.evernote.com/shard/s366/sh/7a2acfb4-93dd-4a42-ab74-40899ef253c5/79cd241e602b52f56a45a0a653988ee3/deep/0/Antonia-go-wild-in-our-code-editor----Skillcrush.png" alt="Screenshot awards covering up the page" width="400px" class="screenshot"></li>
+        </ul>
+        <h3 class="bold">Lessons learned</h3>
+        <ul>
+            <li> I had trouble getting the poem container to actually cover all of the poem and the author pic. I couldn't figure out how to get the container to grow to the right size, and also why it wouldn't do that automatically. For reference, I searched for "parent div doesn't expand to child height" and learned that <div class="quote">
+              <p>Parent elements are never to expand to contain floated elements. IE does this but it's a bug in IE. Firefox, and all the other browsers, perform correctly.</p>
+              <p>The floated element is removed from the normal flow of things and is allowed to overflow the containing element. By adding 'overflow:auto' to the parent, you are telling it to automatically expand itself to contain all elements that would normally overflow the box.</p> <div class="author">source: <a href="http://www.codingforums.com/html-css/164758-div-tag-doesnt-expand-height.html" target="blank"> codingforums</a></div></div>
+              For what it's worth, I ran into the same problem for this quote box because the author line is floated. I guess that'll help me remember!</li>
+              <li>
+                  <p>For the quote box, I couldn't get the rounded corners to display properly using border-radius: 10%, see here:<div style="background-color: AliceBlue; border-radius:10%; width: 100px; height: 40px"></div></p>
+                  <p>It worked when I set the height to something ridiculously long - or rather, it looked fine when I tried with a height of 400px and a width of 400px. It should have occurred to me then that the reason why it worked for that case was that height and width were the same.</p><p> Because I had used a percentage for my rounded corners, the horizontal radius was set to 10% of the width of the box, and the vertical radius to 10% of the height of the box. In other words, giving a percentage would only work for squares where height and width are the same. To solve the problem for my box, I switched the border radius to 20px and it worked nicely. (<a href="http://www.css3.info/preview/rounded-border/" target="blank">This</a> helped me understand rounded corners better.)</p>
+              </li>
+          </ul>
+          <h3 class="bold">The Actual Poems</h3>
+          <ul>
+            <li> <p><span class="bold">Walt Whitman: "O you whom I often"</span> — I don't think this one has a title, like most (all?) Whitman poems. From "Leaves of Grass".</p>
+
+                <div id="preamble-whitman">
+                    <p>One of my favorite poems in English. I have a bunch of German poems that are closer to my heart, but also harder to share, so this was a good compromise. I love the rhythm of this one. </p>
+                </div>
+                <div class="poem-container whitman">
+                    <div class="poem">
+                        <em>O you</em> whom I often and silently come where you are, that I may be with you;
+                        As I walk by your side, or sit near, or remain in the same room with you,
+                        Little you know the <em>subtle electric <span class="fire">fire</span></em> that for your sake is playing within me.
+                        <div class="author">— Walt Whitman</div>
+                    </div>
+                    <div class="pic">
+                      <a href="http://en.wikipedia.org/wiki/Walt_Whitman" target="blank"><img src="http://www.literaryramblings.com/wp-content/uploads/2013/09/walt-whitman1.jpg" alt="Walt Whitman" title="Walt Whitman has the best beard" width="200px"/></a>
+                  </div>
+              </div>
+          </li>
+          <li> <p class="bold">William Shakespeare: Sonnet 145</p>
+
+            <div id="preamble-shakespeare">
+                <p>I so wanted to love all of Shakespeare's sonnets, but they never really moved me all that much. I liked this one though when I read it at age 16 or so, and I really like the "and saved my life" part.</p>
+            </div>
+            <div class="poem-container shakespeare">
+                <div class="poem">
+                    Those lips that Love's own hand did make<br>
+                    Breathed forth the sound that said <span class="her-words">'I hate'</span><br>
+                    To me that languish'd for her sake;<br>
+                    But when she saw my woeful state,<br>
+                    Straight in her heart did mercy come,<br>
+                    Chiding that tongue that ever sweet<br>
+                    Was used in giving gentle doom,<br>
+                    And taught it thus anew to greet:<br>
+                    <span class="her-words">'I hate'</span> she alter'd with an end,<br>
+                    That follow'd it as gentle day<br>
+                    Doth follow night, who like a fiend<br>
+                    From heaven to hell is flown away;<br>
+                    <span class="her-words">'I hate'</span> from hate away she threw,<br>
+                    And saved my life, saying <span class="her-words">'not you.'</span>
+
+                    <div class="author">— Shakespeare</div>
+                </div>
+                <div class="pic">
+                  <a href="http://en.wikipedia.org/wiki/William_Shakespeare" target="blank"><img src="http://www.freemalaysiatoday.com/wp-content/uploads/2012/04/shakespeare_william.jpg" alt="Will Shakespeare" title="Shakespeare is bored" width="200px"/></a>
+              </div>
+          </div>
+      </li>
+      <li>
+        <p class="bold">Emily Dickinson: A Coffin—is a Small Domain</p>
+        <div id="preamble-dickinson">
+            <p>From the Metaphysical Adventuress challenge!</p>
+        </div>
+        <div class="poem-container dickinson">
+            <div class="poem">
+              A Coffin—is a small Domain,<br>
+              Yet able to contain<br>
+              A Citizen of Paradise<br>
+              In its diminished Plane.
+              <p>
+                A Grave—is a restricted Breadth—<br>
+                Yet ampler than the Sun—<br>
+                And all the Seas He populates<br>
+                And Lands He looks upon
+            </p>
+            <p>
+                To Him who on its small Repose<br>
+                Bestows a single Friend—<br>
+                Circumference without Relief—<br>
+                Or Estimate—or End—
+            </p>
+            <div class="author">— Emily Dickinson</div>
+        </div>
+        <div class="pic">
+            <a href="http://en.wikipedia.org/wiki/Emily_Dickinson" target="blank"><img src="http://4b93n32qwvjj3ddn5w3yhffoas6.wpengine.netdna-cdn.com/wp-content/uploads/2013/10/emilydd.jpg" alt="Emily Dickinson" title="Emily looking stern" width="200px"/></a>
+        </div>
+    </div>
+</li>
+</ul>
+</div>
+</body>
+</html>
