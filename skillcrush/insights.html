@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../skillcrush/style.css">
+  <title>Poems Page</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="menu">
+        <p>I'm a menu bar!</p>
+        <ul>
+            <li><a href="../skillcrush/index.html" alt="Go back to the main page">Home</a></li>
+            <li><a href="../skillcrush/skillcrush.html" title="Documenting my Skillcrush experience" alt="Documenting my Skillcrush experience">Skillcrush</a></li>
+            <li><a href="../skillcrush/insights.html" title="Things I learned in the process of building this" alt="Things I learned in the process of building this">Lessons Learned</a></li>
+            <li><a href="../skillcrush/poems.html" title="Random selection of poetry for typesetting practice" alt="Random selection of poetry for typesetting practice">Poems</a></li>
+        </ul>
+    </div>
+  <div class="main">
+    <h1 class="bold">Lessons Learned</h1>
+    <p>This is just a summary (and reinforcement) of the things I learned in the course of this project.</p>
+    <ul>
+            <li> I had trouble getting the poem container to actually cover all of the poem and the author pic. I couldn't figure out how to get the container to grow to the right size, and also why it wouldn't do that automatically. For reference, I searched for "parent div doesn't expand to child height" and learned that <div class="quote">
+              <p>Parent elements are never to expand to contain floated elements. IE does this but it's a bug in IE. Firefox, and all the other browsers, perform correctly.</p>
+              <p>The floated element is removed from the normal flow of things and is allowed to overflow the containing element. By adding 'overflow:auto' to the parent, you are telling it to automatically expand itself to contain all elements that would normally overflow the box.</p> <div class="author">source: <a href="http://www.codingforums.com/html-css/164758-div-tag-doesnt-expand-height.html" target="blank"> codingforums</a></div></div>
+              For what it's worth, I ran into the same problem for this quote box because the author line is floated. I guess that'll help me remember!</li>
+              <li>
+                  <p>For the quote box, I couldn't get the rounded corners to display properly using border-radius: 10%, see here:<div style="background-color: AliceBlue; border-radius:10%; width: 100px; height: 40px"></div></p>
+                  <p>It worked when I set the height to something ridiculously long - or rather, it looked fine when I tried with a height of 400px and a width of 400px. It should have occurred to me then that the reason why it worked for that case was that height and width were the same.</p><p> Because I had used a percentage for my rounded corners, the horizontal radius was set to 10% of the width of the box, and the vertical radius to 10% of the height of the box. In other words, giving a percentage would only work for squares where height and width are the same. To solve the problem for my box, I switched the border radius to 20px and it worked nicely. (<a href="http://www.css3.info/preview/rounded-border/" target="blank">This</a> helped me understand rounded corners better.)</p>
+              </li>
+          </ul>
+    </div>
+  </body>
+  </html
