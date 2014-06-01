@@ -1,0 +1,162 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+/*html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }*/
+
+/* MY OWN CSS */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  padding: 20px;
+  width: 80%;
+  /*float: left;*/
+}
+h1 {
+  text-align: center;
+}
+li {
+  margin-bottom: 0.25em;
+}
+
+header {
+  /*width: 50%;*/
+  /*padding: 0 15%;*/
+  text-align: center;
+  overflow: auto;
+
+  li {
+    margin-right: 10px;
+    float: right;
+    list-style-position: inside;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+}
+
+.menu {
+  float: left;
+  width: 200px;
+  overflow: auto;
+  padding: 20px;
+  margin: 50px;
+  background-color: AliceBlue;
+  border-radius: 20px;
+}
+.main {
+  margin-left: 350px;
+}
+.bold {
+	font-weight: 300;
+}
+.screenshot {
+ vertical-align: top;
+ padding: 10px;
+}
+.poem-container {
+  position: relative;
+  width: 80%;
+  overflow: auto;
+  padding: 20px;
+}
+.whitman {
+ font-family: 'Amatic SC', cursive;
+}
+.shakespeare {
+	font-family: 'Jim Nightshade', cursive;
+}
+.dickinson {
+  font-family: 'Dawning of a New Day', cursive;
+}
+.fire {
+  padding: 0px 10px 3px 10px;
+  background-size: 150% 175%;
+  background-position: 50%;
+  background-image: url("https://www.evernote.com/shard/s366/sh/e4fa0479-0ccc-4f0a-97b1-98f480a224e4/bb9136aefb6c1d08351f21e2d98b1c7d/deep/0/Untitled.png");
+}
+.her-words {
+  text-transform: uppercase;
+  color: crimson;
+}
+em {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+}
+.poem {
+  position: relative;
+  float: right;
+  width: 55%;
+  font-size: 20px;
+}
+.author {
+  float: right;
+}
+.pic {
+  position: relative;
+  padding-right: 20px;
+  float: left;
+  width: 25%;
+}
+hr {
+  display: block; height: 1px;
+  border: 0; border-top: 1px solid crimson;
+  margin: 1em 0; padding: 0;
+}
+
+  .quote {
+   font-style: italic;
+   margin: 0 30px;
+   overflow: auto;
+   padding: 20px;
+   background-color: AliceBlue;
+   border-radius: 20px;
+ }
