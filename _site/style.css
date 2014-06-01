@@ -1,0 +1,321 @@
+  /*a:link    {color: #669933;
+  			} */
+  /*a:visited {color: #669999;
+  			}*/ /* visited link */
+  /*a:hover   {color: #FF9999;
+  			} *//* mouse over link */
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  /*src: url('/Users/antonia/Dropbox/Duolingo_Server/new-duolingo-2/main/client/static/fonts/museo/museosansrounded-300-webfont.ttf') format('truetype');*/
+  src: url('/fonts/museosansrounded-300-webfont.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+/*@font-face {
+  font-family: 'museo-sans-rounded';
+  src: url('/s3/fonts/museo/museosansrounded-500-webfont.eot');
+  src: url('/s3/fonts/museo/museosansrounded-500-webfont.eot?#iefix') format('embedded-opentype'), url('/s3/fonts/museo/museosansrounded-500-webfont.woff') format('woff'), url('/s3/fonts/museo/museosansrounded-500-webfont.ttf') format('truetype'), url('/s3/fonts/museo/museosansrounded-500-webfont.svg#museo_sans_rounded500') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url('/s3/fonts/museo/museosansrounded-700-webfont.eot');
+  src: url('/s3/fonts/museo/museosansrounded-700-webfont.eot?#iefix') format('embedded-opentype'), url('/s3/fonts/museo/museosansrounded-700-webfont.woff') format('woff'), url('/s3/fonts/museo/museosansrounded-700-webfont.ttf') format('truetype'), url('/s3/fonts/museo/museosansrounded-700-webfont.svg#museo_sans_rounded700') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}*/
+
+body {
+	font-family: "Museo Sans Rounded";
+	/*src: url('http://domain.com/fonts/font.ttf');*/
+	/*background-size: 150%;*/
+	/*background-color: #CCCC99;*/
+	/*font-family: 'Gudea', sans-serif;*/
+}
+
+hr {
+	margin: 30px;
+}
+
+.outsideclass {
+	float: left;
+}
+
+/*Perfect circle*/
+.img-circle {
+  border-radius: 50%; /*set radius in percents*/
+  box-shadow: 2px 2px 1px #888888;
+  margin: auto;
+  vertical-align: middle;
+}
+
+/*.contributor_row {
+	margin: auto;
+	text-align: center;
+}*/
+
+.img-progress {
+	width: 100%;
+}
+
+.image_tile_container_left {
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: solid #330066 2px;
+	/*margin-left: 20px;*/
+	margin-right: 40px;
+}
+
+.image_tile_container_right {
+	position: relative;
+	float: right;
+	width: 150px;
+	height: 150px;
+	border: solid #993366 2px;
+	margin-left: 40px;
+	/*margin-right: 20px;*/
+
+}
+.image_tile_bottom_right {
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	border: solid #993366 2px;
+	background-color: #330066;
+	background-size: 50px;
+	float: left;
+	top: 75px;
+	left: 75px;
+}
+
+.image_tile_bottom_left {
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	border: solid #993366 2px;
+	background-color: #330066;
+	background-size: 50px;
+	float: right;
+	top: 75px;
+	right: 75px;
+}
+
+.image_tile_top_right {
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	border: solid #993366 2px;
+	background-color: #330066;
+	background-size: 50px;
+	float: right;
+	left: 75px;
+}
+
+.image_tile_top_left {
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	border: solid #993366 2px;
+	background-color: #330066;
+	background-size: 50px;
+	float: left;
+	right: 75px;
+}
+
+.header {
+	/*background-color: #99CC66;*/
+	/*background-image: url("img/glitch_bg.jpg");
+	background-size: 150%;*/
+	text-align: center;
+	/*color: #993366;*/
+	/*padding: 2px;*/
+	width: 55%;
+	padding: 50px 50px 20px 50px;
+	margin: auto;
+	/*font-variant:small-caps;*/
+
+}
+
+.content_area {
+	/*color: #336666;
+	color: #330066;
+	border: solid #330066 2px;
+	background-image: url("img/wet_snow.png");*/
+	padding: 20px 20px 20px 20px;
+	width: 35em;
+	float: left;
+}
+
+.sidebar {
+	width: 25em;
+	/*padding: 2px;*/
+	font-size: 10;
+	/*color: ##993366;*/
+	float: left;
+	/*border: solid #99CC66 2px;*/
+	margin: 20px;
+	/*background-color: #9966CC;*/
+}
+
+.sidebar_right {
+	width: 15em;
+	/*padding: 2px;*/
+	/*font-size: 10;*/
+	/*color: ##993366;*/
+	float: left;
+	/*border: solid #99CC66 2px;*/
+	margin: 20px;
+	/*background-color: #9966CC;*/
+}
+
+
+.footer {
+	font-weight: lighter;
+	color: #99CC66;
+	clear: both;
+
+}
+
+.yay {
+	background-image: url("img/pumpkin.png");
+	padding: 13px;
+	/*text-decoration:line-through;*/
+}
+
+.image_container {
+	/*border: solid #330066 2px;*/
+	position: relative;
+
+}
+
+.img_annotation {
+	background-color: red;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 80px;
+}
+.caption {
+	background-color: white;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	padding: 2px;
+	z-index: 100;
+
+}
+
+.contributor {
+	vertical-align:	middle;
+	text-align:left;
+	padding: 10px;
+
+}
+
+.contributor_text {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.team {
+	box-shadow: 2px 2px 1px #888888;
+	border-radius: 15px;
+	border: solid #008BE8 2px;
+	padding: 10px;
+	margin-bottom: 20px;
+
+}
+
+em {
+	font-weight: bold;
+}
+
+/*.contrib_profile {
+	vertical-align:	top;
+}*/
+.contrib_profile th {
+	text-align:left;
+	width: 13em;
+	vertical-align:	top;
+	margin-bottom: 10px;
+}
+
+.contrib_profile td {
+	vertical-align:	top;
+	margin-bottom: 10px;
+}
+
+/*.contrib_profile {
+	width: 30%;
+}*/
+
+.profile_img {
+	/*border-radius: 50%; set radius in percents*/
+	/*box-shadow: 2px 2px 1px #888888;*/
+	/*float: right;*/
+	width: 6%;
+	margin-left: 10px;
+}
+
+blockquote {
+  /*font: 14px/20px italic Times, serif;*/
+  padding: 8px;
+  /*background-color: #faebbc;*/
+  /*border-top: 1px solid #e1cc89;*/
+  /*border-bottom: 1px solid #e1cc89;*/
+  margin: 5px;
+  background-image: url(img/examplequote.gif);
+  background-size: 20px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  }
+  blockquote span {
+	  	padding: 8px;
+  		margin: 5px;
+    	display: block;
+    	background-image: url(img/examplequote2.gif);
+    	background-size: 20px;
+    	background-repeat: no-repeat;
+    	background-position: bottom right;
+  	}
+
+
+/*ul {
+	color: blue;
+}
+ol {
+	color: purple;
+}
+h2 {
+	color: green;
+}*/
+/*code {
+	color: #8B9EB1;
+}
+#footer {
+	color: #f47321;
+}*/
+/*img {
+	padding: 5px;
+	vertical-align:text-bottom;
+}*/
+/*.warning {
+	background-color: #947FB4;
+	font-family: "Helvetica";
+}
+
+li {
+	color: #4F3F67;
+	padding-right: 50px;
+}
+
+p em {
+    color: yellow;
+    background-color: #44436A;
+  }*/
