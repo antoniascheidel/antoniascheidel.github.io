@@ -83,38 +83,36 @@ header {
   h1 {
     font-weight: 100;
   }
-  li {
-    padding: 5px 10px;
-    display: inline;
-    border-right: #E6F16F dashed 1px;
-    list-style-position: inside;
-    &:last-child {
-      border-right: none;
-    }
-
-    a {
-      color: #E6F16F;
-      transition: all 0.1s ease-in;
-      text-decoration:none;
-      &:hover{
-        -webkit-stroke-width: 5.3px;
-        -webkit-stroke-color: #FFFFFF;
-        -webkit-fill-color: #FFFFFF;
-        text-shadow: 1px 10px 20px white;
-      }
-    }
-
-  }
-
   ul {
     overflow: auto;
     display: block;
     margin: 0 auto;
     padding: 0;
-    width: 300px;
+    width: 400px;
     padding: 5px;
     border-radius: 10px;
     border: #E6F16F dashed 1px;
+    li {
+      padding: 5px 10px;
+      display: inline;
+      border-right: #E6F16F dashed 1px;
+      list-style-position: inside;
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        color: #E6F16F;
+        transition: all 0.1s ease-in;
+        text-decoration:none;
+        &:hover{
+          -webkit-stroke-width: 5.3px;
+          -webkit-stroke-color: #FFFFFF;
+          -webkit-fill-color: #FFFFFF;
+          text-shadow: 1px 10px 20px white;
+        }
+      }
+
+    }
   }
 }
 
@@ -130,8 +128,9 @@ header {
 }
 .main {
   padding: 20px;
-  width: 80%;
+  /*width: 80%;*/
   margin-left: 350px;
+  margin-right: 20%;
 }
 .bold {
   font-weight: 300;
